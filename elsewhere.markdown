@@ -8,4 +8,6 @@ On [Twitter](https://www.twitter.com/arshednabeel), I tweet stuff about science,
 
 I occasionally make sketches and artwork, digital and otherwise. The better ones can be found on my [Instagram](https://www.instagram.com/eigenhuman/) profile.
 
-I very rarely write blog-posts on [Medium](https://medium.com/@arshednabeel), the subject matter of which vary wildly. Attempts to consistently blog about one chosen topic has so far been unsucessful, but I am starting to like it this way.
+I very rarely write blog-posts on [Medium](https://medium.com/@arshednabeel), the subject matter of which vary wildly. Attempts to consistently blog about one chosen topic have so far been unsucessful, but I am starting to like it this way.
+
+I am also on [Facebook](https://www.facebook.com/arshednabeel) and [LinkedIn](https://www.linkedin.com/arshed-nabeel)
