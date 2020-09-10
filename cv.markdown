@@ -32,7 +32,15 @@ _Graduate research performed as part of doctoral study, discontinued. This work 
 Under the guidance of Dr. Danny M Raj, Department of Chemical Engineering, Indian Insitute of Science, Bangalore \\
 _Reseach performed as part of a Research Associate appointment. This work involved analyzing the movement and turning behavior of schools of fish, building predictive models, and using them to gain insights into the collective dynamics of the school._
 
+-----------------
+\\
+**Seatbelt Detection, Warning and Compliance Analysis** \\
+Work done while at Netradyne. \\
+_Developed and maintained an end-to-end solution to detect, from a video feed, when drivers are driving without seatbelt, provide alerts as appropriate, and assign seatbelt compliance scores. The project involved developing, training and deploying deep neural networks, writing and maintaining code to run seatbelt detection logic on edge-devices, and writing pipelines to analyze large datasets (collected over a period of time) to generate compliance reports._
 
+**Driver Drowsiness Detection** \\
+Work done while at Netrayne. \\
+_Designed and developed an experimental driver drowsiness detection pipeline that uses both visual cues and driving patterns to detect when the driver is drowsy and provide alerts as appropriate._
 
 
 
