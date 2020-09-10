@@ -10,4 +10,6 @@ I occasionally make sketches and artwork, digital and otherwise. The better ones
 
 I very rarely write blog-posts on [Medium](https://medium.com/@arshednabeel), the subject matter of which vary wildly. Attempts to consistently blog about one chosen topic have so far been unsucessful, but I am starting to like it this way.
 
-I am also on [Facebook](https://www.facebook.com/arshednabeel) and [LinkedIn](https://www.linkedin.com/arshed-nabeel)
+I track my irregular reading habits on [Goodreads](https://www.goodreads.com/arshednabeel).
+
+I am also on [Facebook](https://www.facebook.com/arshednabeel) and [LinkedIn](https://www.linkedin.com/arshed-nabeel).

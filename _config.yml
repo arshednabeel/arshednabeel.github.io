@@ -34,11 +34,11 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - about.markdown
-  - cv.markdown
-  - publications.markdown
-  - talks.markdown
-  - elsewhere.markdown
+  - about.md
+  - cv.md
+  - publications.md
+  - talks.md
+  - elsewhere.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
