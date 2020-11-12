@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-I am Arshed Nabeel, an independent researcher interested in neuroscience, deep representation learning, and the intersection of the two. In my most recent avatar, I was a deep learning research engineer at Netradyne, developing tools and techniques to analyze driver behavior. Previously, I was at Indian Institute of Science, exploring functional neuroimaging, neural signals, and their timescales.
+I am Arshed Nabeel, an independent researcher interested in deep representation learning, neuroscience, and the intersection of the two. In my most recent avatar, I was a deep learning research engineer at Netradyne, developing tools and techniques to analyze driver behavior. Previously, I was at Indian Institute of Science, exploring functional neuroimaging, neural signals, and their timescales. In my past adventures, I have also dabbled in other fields like computer science theory and mathematical ecology.
 
 In my free time, I obsess over Formula 1 (rooting for Lando Norris and McLaren), and make slightly-better-than-mediocre digital artwork. I also sometimes find topics of varying degrees of obscurity to dig into, which can vary in scope; some of the recent ones are the history of computing (especially videogames), the _Star Wars_ universe, and Neil Gaiman's _Sandman_.
 

@@ -22,7 +22,7 @@ title: Arshed Nabeel
 email: arshed [dot] nabeel [at] gmail [dot] com
 description: >- # this means to ignore newlines until "baseurl:"
   Hey there! I am Arshed Nabeel, an independent researcher interested in
-  neuroscience, deep representation learning, and the intersection of the two.
+   deep representation learning, neuroscience, and the intersection of the two.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arshednabeel

@@ -7,7 +7,7 @@ title: Home
 
 ---
 
-I am Arshed Nabeel, an independent researcher interested in neuroscience, deep representation learning, and the intersection of the two. 
+Hello! I am Arshed Nabeel, an independent researcher interested in deep representation learning, neuroscience, and the intersection of the two. In my most recent avatar, I was a deep learning research engineer at Netradyne, developing tools and techniques to analyze driver behavior. Previously, I was at Indian Institute of Science, exploring functional neuroimaging, neural signals, and their timescales. 
 
 #### [About Me](about)
 #### [Curriculum Vitae](cv)
