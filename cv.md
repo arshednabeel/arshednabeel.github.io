@@ -34,7 +34,7 @@ Under the guidance of [Dr. Danny M Raj](https://www.dannyraj.com/), Department o
 _Reseach performed as part of a Research Associate appointment. We analyzed the movement and turning behavior of schools of fish, built predictive models, and used them to gain insights into the collective dynamics of the school._
 
 2020 January -- \\
-**Observing and Inferring a Collective**
+**Observing and Inferring a Collective** \\
 Under the guidance of [Dr. Danny M Raj](https://www.dannyraj.com/), Department of Chemical Engineering, Indian Instiute of Science, Bangalore \\
 _We study the movement of agents in a collective system, trying to understand how much we can learn about the individual agents from observed data about the collective.__
 
