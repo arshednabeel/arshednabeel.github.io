@@ -13,24 +13,30 @@ permalink: /cv/
 # Experience
 
 | 2018 December -- <br> 2019 March | **Research Associate** <br> Department of Chemical Engineering, Indian Institute of Science, Bangalore |
-| 2019 April -- | **Research Engineer** <br> Netradyne, Bangalore |
+| 2019 April -- <br> 2020 September | **Research Engineer** <br> Netradyne, Bangalore |
+| 2021 January -- | **Research Associate** <br> Department of Chemical Engineering, Indian Institute of Science, Bangalore |
 
 # Projects
 
 2014 May -- 2015 May \\
 **Parameterized Algorithms for Social Choice Problems** \\
 Under the guidance of Dr. Neeldhara Misra, Department of CSA, Indian Institute of Science, Bangalore \\
-_Thesis dissertation project performed as part of the Master of Engineering program at IISc. This work examined the problem of approval-voting through the lens of parameterized complexity. Part of this work was published in AAMAS 2015 (see [publications](/publications/))._
+_Thesis dissertation project performed as part of the Master of Engineering program at IISc. We examined the problem of approval-voting through the lens of parameterized complexity. Part of this work was published in AAMAS 2015 (see [publications](/publications/))._
 
 2015 August -- 2018 April \\
 **Functional Dynamics of Human Brain Networks** \\
 Under the guidance of Prof. Sridharan Devarajan (Center for Neuroscience) and Prof. Arnab Bhattacharyya (Department of CSA), Indian Institute of Science, Bangalore\\
-_Graduate research performed as part of doctoral study, discontinued. This work studied the structure and dynamics of functional networks underlying human brain activity, using a combination of theoretical tools and neuroimaging data analysis. Part of this work was published in NeurIPS 2017 (see [publications](/publications/))._
+_Graduate research performed as part of doctoral study, discontinued. We studied the structure and dynamics of functional networks underlying human brain activity, using a combination of theoretical tools and neuroimaging data analysis. Part of this work was published in NeurIPS 2017 (see [publications](/publications/))._
 
 2018 December -- 2019 March \\
 **Predictive Analysis of Turning Behavior in Schools of Fish** \\
-Under the guidance of Dr. Danny M Raj, Department of Chemical Engineering, Indian Insitute of Science, Bangalore \\
-_Reseach performed as part of a Research Associate appointment. This work involved analyzing the movement and turning behavior of schools of fish, building predictive models, and using them to gain insights into the collective dynamics of the school._
+Under the guidance of [Dr. Danny M Raj](https://www.dannyraj.com/), Department of Chemical Engineering, Indian Insitute of Science, Bangalore \\
+_Reseach performed as part of a Research Associate appointment. We analyzed the movement and turning behavior of schools of fish, built predictive models, and used them to gain insights into the collective dynamics of the school._
+
+2020 January -- \\
+**Observing and Inferring a Collective**
+Under the guidance of [Dr. Danny M Raj](https://www.dannyraj.com/), Department of Chemical Engineering, Indian Instiute of Science, Bangalore \\
+_We study the movement of agents in a collective system, trying to understand how much we can learn about the individual agents from observed data about the collective.__
 
 -----------------
 \\
