@@ -1,6 +1,6 @@
 ---
 title: Contact
-
+toc: false
 ---
 
 ### Address

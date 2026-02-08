@@ -1,5 +1,6 @@
 ---
  title: "Bio"
+ toc: false
 ---
  
 ## Education

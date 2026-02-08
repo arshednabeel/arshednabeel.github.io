@@ -1,6 +1,6 @@
 ---
 title: Events
-
+toc: false
 ---
 
 # Conferences and Workshops
