@@ -1,0 +1,40 @@
+---
+title: Research
+bibliography: publications.bib
+csl: aps.csl
+reference-location: margin
+citation-location: margin
+---
+
+My research interests sit at the intersection of biology, computer science and applied mathematics. My research follows two broad themes that often interleave:
+
+**Collective behaviour and emergent phenomena.** I am fascinated by how complex emergent group behaviours can result from interactions among simple units. I have studied collective emergent phenomena in various systems such as brain networks, droplet assemblies and fish schools. 
+
+**Data driven modelling.** In my research, I develop and use techniques to _discover_ models from empirical data. I am a strong proponent of combining of data- and theory-driven modelling approaches to answer questions about complex natural systems.
+
+# Projects
+
+## Collective movement of fish schools
+
+For my Ph. D. research, I study the collective movement of fish schools, using a combination of data-driven and theoretical approaches. The [Theoretical Ecology and Evolution (TEE) Lab](https://teelabiisc.wordpress.com) at IISc, with its remarkable mix of experimentalists and theorists, makes this research possible.
+
+**Unifying principles of collective movement in fish schools.** I analyzed the movement trajectories of over a dozen different species of fish to understand generalisable patterns and principles underlying their collective movement. Insights from this analysis lead to new models of collective movement in fish, where variable speed plays a crucial role in the emergent dynamics [@kc_flocking_2026].
+
+**Collective movement of mixed-species fish schools.** The movement models developed above gives rise to novel predictions about the schooling behaviour of mixed-species schools, where different species differ slightly in their behaviour. These predictions match remarkably well with actual experimental data from mixed-species schools. _(with [Jahanvi Tiwari](https://jahanvitiwari.weebly.com))_
+
+## Data-driven discovery of stochastic dynamical systems
+
+During my Ph. D., I developed tools and techniques to _discover_ governing equations directly from datasets. I created a Python library, [PyDaddy](https://pydaddy.readthedocs.io) (**Py**thon library for **Da**ta **D**riven **Dy**namics) that allows you to discover and validate stochastic dynamical systems from time series data[@nabeel_discovering_2025].
+
+This data-driven model discovery approach have become the main workhorse of my research on collective movement. However, the technique is quite general: I have since then started collaborations where we apply the techique to other problems, such as population dynamics of fish populations in the wide. I will hopefully have more to say on this soon!
+
+## Disentangling intrinsic behaviour from collective effects
+
+I have collaborated with [Dr. Danny Raj](https://www.dannyraj.com) (IIT Madras) on multiple projects where the broad goal is to understand how interactions within the group alter the intrinsic behaviour of individuals in a group [@nabeel_disentangling_2022]. We ask questions such as, 
+
+* Can we infer the intrinsic features of individuals—such as a desired movement direction—moving in a collective, where their actual movement is dominated by group interactions?
+* In a potentially heterogeneous collective system, can we reliaby estimate the level of heterogenity from movement trajectories? Do interactions cause over- or under-estimation of heterogeneity?
+
+## Emergent dynamics in miscellaneous systems
+
+I have also dabbled in projects involving collective and emergent dynamics in other systems, such as investingating the algorithmic aspects of non-traditional voting systems[@misra_parameterized_2015], inferring emergent time-scales in human brain networks [@sundaresan_mapping_2017] and modelling the dynamics of micro-droplet assemblies using network science[@m_inferring_2022].

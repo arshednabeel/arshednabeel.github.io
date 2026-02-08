@@ -1,0 +1,12 @@
+---
+title: "Publications"
+bibliography: publications.bib
+csl: apa-cv.csl
+reference-section-title: "&nbsp;"
+css: pub-style.css
+toc: false
+nocite: |
+  @*
+---
+
+[Google Scholar](https://scholar.google.com/citations?user=ejljBbkAAAAJ&hl=en)

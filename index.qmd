@@ -1,0 +1,15 @@
+---
+title: "Arshed Nabeel"
+about:
+    template: jolla
+    image: images/arshed-photo.jpg
+
+toc: false
+---
+
+I am a computer scientist in an ecology department wearing a physicist hat.
+
+Presently a PhD candidate at the Indian Institute of Science, Bengaluru, India, I study the collective movement of fish schools, trying to find unifying principles and patterns that generalise across species and contexts.
+
+
+{{< include _news.qmd >}}

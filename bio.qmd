@@ -1,0 +1,40 @@
+---
+ title: "Bio"
+---
+ 
+## Education
+
+**Ph. D.** (Interdisciplinary Mathematical Sciences) – _ongoing_\
+IISc Mathematics Initiative, Indian Institute of Science \
+Bengaluru, Karnataka, India
+
+**M. E.** (Computer Science) \
+Department of Computer Science and Engineering, Indian Institute of Science \
+Bengaluru, Karnataka, India
+
+**B. Tech.** (Computer Science and Engineering) \
+University College of Engineering, University of Kerala \
+Thiruvananthapuram, Kerala, India
+
+## Experience
+
+**Research Assistant** \
+Theoretical Ecology and Evolution (TEE) Lab \
+Center for Ecological Sciences, Indian Institute of Science \
+Bengaluru, Karnataka, India
+
+**Research Assistant** \
+Collective Phenomena (CoPhe) Lab \
+Department of Chemical Engineering, Indian Institute of Science \
+Bengaluru, Karnataka, India
+
+**Research Engineer** \
+Netradyne Inc. \
+Bengaluru, Karnataka, India
+
+**Research Assistant** \
+Cognition, Computation and Behaviour Lab \
+Center for Neuroscience, Indian Institute of Science \
+Bengaluru, Karnataka, India
+
+

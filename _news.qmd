@@ -1,0 +1,8 @@
+## Updates
+
+::: {style="text-align: left"}
+**Feb 2025** | I'm in the process of migrating my website to this github.io site, powered by [Quarto](https://quarto.org). See my old Wordpress website [here](https://arshednabeel.wordpress.com).
+
+**Jan 2025** | Our new preprint, [_'Flocking by stopping: a mechanism or order in collective movement'_](https://arxiv.org/abs/2601.15362) is out.
+
+:::

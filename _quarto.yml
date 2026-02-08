@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "Arshed Nabeel"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - bio.qmd
+      - research.qmd
+      - publications.qmd
+      - events.qmd
+      - contact.qmd
+    right:
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=ejljBbkAAAAJ&hl=en
+      - icon: bluesky
+        href: https://bsky.app/profile/arshed.bsky.social
+      - icon: instagram
+        href: https://www.instagram.com/eigenhuman/
+      - icon: github
+        href: https://github.com/arshednabeel
+
+format:
+  html:
+    theme:
+      - litera
+      - brand
+    css: styles.css
+    toc: true
+
