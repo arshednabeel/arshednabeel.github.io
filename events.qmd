@@ -22,7 +22,7 @@ Talk: _Towards unifying principles of fish schooling dynamics_
 
 **Collective Behaviour Workshop** \
 Isaac Newton Institute of Mathematical Sciences, Cambridge, United Kingdom. August 2023 \
-Talk: _Discovering stochastic dynamical models from time series data_
+Talk: _Discovering stochastic dynamical models from time series data_ ([video](https://youtu.be/ZnQ8_UukJcY))
 
 # Invited Talks and Lectures
 
@@ -38,7 +38,7 @@ Tutorial: _Introduction to computational neuroscience_ \
 **Workshop on Soft Computing for Biomedical Applications** \
 Mar Baselios College of Engineering and Technology, Thiruvananthapuram, India. July 2017
 
-Talk: _Networks of the brain: Exploring Brain Function Through Data and Computation_ (video) \
+Talk: _Networks of the brain: Exploring Brain Function Through Data and Computation_ ([video](https://youtu.be/CzuntCROPhA)) \
 **IISc CSA Summer School** for undergraduate students \
 Department of Computer Science and Automation, Indian Institute of Science, Bengaluru, India. July 2016
 
