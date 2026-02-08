@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "bio.html",
+    "href": "bio.html",
+    "title": "Bio",
+    "section": "",
+    "text": "Ph. D. (Interdisciplinary Mathematical Sciences) – ongoing\nIISc Mathematics Initiative, Indian Institute of Science\nBengaluru, Karnataka, India\nM. E. (Computer Science)\nDepartment of Computer Science and Engineering, Indian Institute of Science\nBengaluru, Karnataka, India\nB. Tech. (Computer Science and Engineering)\nUniversity College of Engineering, University of Kerala\nThiruvananthapuram, Kerala, India"
+  },
+  {
+    "objectID": "bio.html#education",
+    "href": "bio.html#education",
+    "title": "Bio",
+    "section": "",
+    "text": "Ph. D. (Interdisciplinary Mathematical Sciences) – ongoing\nIISc Mathematics Initiative, Indian Institute of Science\nBengaluru, Karnataka, India\nM. E. (Computer Science)\nDepartment of Computer Science and Engineering, Indian Institute of Science\nBengaluru, Karnataka, India\nB. Tech. (Computer Science and Engineering)\nUniversity College of Engineering, University of Kerala\nThiruvananthapuram, Kerala, India"
+  },
+  {
+    "objectID": "bio.html#experience",
+    "href": "bio.html#experience",
+    "title": "Bio",
+    "section": "Experience",
+    "text": "Experience\nResearch Assistant\nTheoretical Ecology and Evolution (TEE) Lab\nCenter for Ecological Sciences, Indian Institute of Science\nBengaluru, Karnataka, India\nResearch Assistant\nCollective Phenomena (CoPhe) Lab\nDepartment of Chemical Engineering, Indian Institute of Science\nBengaluru, Karnataka, India\nResearch Engineer\nNetradyne Inc. \nBengaluru, Karnataka, India\nResearch Assistant\nCognition, Computation and Behaviour Lab\nCenter for Neuroscience, Indian Institute of Science\nBengaluru, Karnataka, India"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Arshed Nabeel",
+    "section": "",
+    "text": "I am a computer scientist in an ecology department wearing a physicist hat.\nPresently a PhD candidate at the Indian Institute of Science, Bengaluru, India, I study the collective movement of fish schools, trying to find unifying principles and patterns that generalise across species and contexts."
+  },
+  {
+    "objectID": "index.html#updates",
+    "href": "index.html#updates",
+    "title": "Arshed Nabeel",
+    "section": "Updates",
+    "text": "Updates\n\nFeb 2025 | I’m in the process of migrating my website to this github.io site, powered by Quarto. See my old Wordpress website here.\nJan 2025 | Our new preprint, ‘Flocking by stopping: a mechanism or order in collective movement’ is out."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Address\nArshed Nabeel\nTA-10, Center for Ecological Sciences,\nIndian Institute of Science,\nBengaluru, Karnataka, India.\n560012\n\n\nE-mail\nfirstname dot lastname at gmail dot com"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "My research interests sit at the intersection of biology, computer science and applied mathematics. My research follows two broad themes that often interleave:\nCollective behaviour and emergent phenomena. I am fascinated by how complex emergent group behaviours can result from interactions among simple units. I have studied collective emergent phenomena in various systems such as brain networks, droplet assemblies and fish schools.\nData driven modelling. In my research, I develop and use techniques to discover models from empirical data. I am a strong proponent of combining of data- and theory-driven modelling approaches to answer questions about complex natural systems."
+  },
+  {
+    "objectID": "research.html#collective-movement-of-fish-schools",
+    "href": "research.html#collective-movement-of-fish-schools",
+    "title": "Research",
+    "section": "Collective movement of fish schools",
+    "text": "Collective movement of fish schools\nFor my Ph. D. research, I study the collective movement of fish schools, using a combination of data-driven and theoretical approaches. The Theoretical Ecology and Evolution (TEE) Lab at IISc, with its remarkable mix of experimentalists and theorists, makes this research possible.\nUnifying principles of collective movement in fish schools. I analyzed the movement trajectories of over a dozen different species of fish to understand generalisable patterns and principles underlying their collective movement. Insights from this analysis lead to new models of collective movement in fish, where variable speed plays a crucial role in the emergent dynamics  [1].\n\n[1] Y. K. KC, A. Nabeel, S. Iyer, and V. Guttal, Flocking by stopping: A novel mechanism of emergent order in collective movement, (2026).\nCollective movement of mixed-species fish schools. The movement models developed above gives rise to novel predictions about the schooling behaviour of mixed-species schools, where different species differ slightly in their behaviour. These predictions match remarkably well with actual experimental data from mixed-species schools. (with Jahanvi Tiwari)"
+  },
+  {
+    "objectID": "research.html#data-driven-discovery-of-stochastic-dynamical-systems",
+    "href": "research.html#data-driven-discovery-of-stochastic-dynamical-systems",
+    "title": "Research",
+    "section": "Data-driven discovery of stochastic dynamical systems",
+    "text": "Data-driven discovery of stochastic dynamical systems\nDuring my Ph. D., I developed tools and techniques to discover governing equations directly from datasets. I created a Python library, PyDaddy (Python library for Data Driven Dynamics) that allows you to discover and validate stochastic dynamical systems from time series data [2].\n\n[2] A. Nabeel, A. Karichannavar, S. Palathingal, J. Jhawar, D. B. Brückner, M. Danny Raj, and V. Guttal, Discovering stochastic dynamical equations from ecological time series data, The American Naturalist 734083 (2025).\nThis data-driven model discovery approach have become the main workhorse of my research on collective movement. However, the technique is quite general: I have since then started collaborations where we apply the techique to other problems, such as population dynamics of fish populations in the wide. I will hopefully have more to say on this soon!"
+  },
+  {
+    "objectID": "research.html#disentangling-intrinsic-behaviour-from-collective-effects",
+    "href": "research.html#disentangling-intrinsic-behaviour-from-collective-effects",
+    "title": "Research",
+    "section": "Disentangling intrinsic behaviour from collective effects",
+    "text": "Disentangling intrinsic behaviour from collective effects\nI have collaborated with Dr. Danny Raj (IIT Madras) on multiple projects where the broad goal is to understand how interactions within the group alter the intrinsic behaviour of individuals in a group  [3]. We ask questions such as,\n\n[3] A. Nabeel and M. Danny Raj, Disentangling intrinsic motion from neighborhood effects in heterogeneous collective motion, Chaos: An Interdisciplinary Journal of Nonlinear Science 32, 063119 (2022).\n\nCan we infer the intrinsic features of individuals—such as a desired movement direction—moving in a collective, where their actual movement is dominated by group interactions?\nIn a potentially heterogeneous collective system, can we reliaby estimate the level of heterogenity from movement trajectories? Do interactions cause over- or under-estimation of heterogeneity?"
+  },
+  {
+    "objectID": "research.html#emergent-dynamics-in-miscellaneous-systems",
+    "href": "research.html#emergent-dynamics-in-miscellaneous-systems",
+    "title": "Research",
+    "section": "Emergent dynamics in miscellaneous systems",
+    "text": "Emergent dynamics in miscellaneous systems\nI have also dabbled in projects involving collective and emergent dynamics in other systems, such as investingating the algorithmic aspects of non-traditional voting systems [4], inferring emergent time-scales in human brain networks  [5] and modelling the dynamics of micro-droplet assemblies using network science [6].\n\n\n\n[4] N. Misra, A. Nabeel, and H. Singh, On the Parameterized Complexity of Minimax Approval Voting, Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems 9 (2015).\n\n[5] M. Sundaresan, A. Nabeel, and D. Sridharan, Mapping distinct timescales of functional interactions among brain networks, 31st Conference on Neural Information Processing Systems 10 (2017).\n\n[6] M. Danny Raj, P. Sivakumar, and A. Nabeel, Inferring the stability of concentrated emulsions from droplet configuration information, The European Physical Journal Special Topics 232, 893 (2022)."
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "Conferences and Workshops\nAlma Dal Co School on Collective Behaviour, 2025\nIstituto Veneto di Scienze, Lettere ed Arti (IVSLA), Venice, Italy. September-October 2025\nPoster: Towards unifying principles of fish schooling dynamics\nBehaviour 2025 (38th International Ethological Congress)\nKolkata, India. August 2025\nPoster: Towards unifying principles of fish schooling dynamics (Best Poster Award)\nKonstanz School of Collective Behaviour, 2025\nUniversity of Konstanz, Konstanz, Germany. July-August 2025\nConference on Complex Systems, 2025\nUniversity of Exeter, Exeter, United Kingdom. August-September 2024\nTalk: Towards unifying principles of fish schooling dynamics\nCollective Behaviour Workshop\nIsaac Newton Institute of Mathematical Sciences, Cambridge, United Kingdom. August 2023\nTalk: Discovering stochastic dynamical models from time series data\n\n\nInvited Talks and Lectures\nLecture: Self organization and emergence in living systems\nSummer School on Physics of Living Systems for high-school students\nJawaharlal Nehru Planetarium, Bengaluru, India. April 2025\nTutorial: From data to models: discovering dynamical models from time series data\nICTS-ICTP Winter School on Quantitative Systems Biology\nNational Institute of Biological Sciences, Bengaluru, India. January 2025\nTutorial: Introduction to computational neuroscience\nWorkshop on Soft Computing for Biomedical Applications\nMar Baselios College of Engineering and Technology, Thiruvananthapuram, India. July 2017\nTalk: Networks of the brain: Exploring Brain Function Through Data and Computation (video)\nIISc CSA Summer School for undergraduate students\nDepartment of Computer Science and Automation, Indian Institute of Science, Bengaluru, India. July 2016"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Google Scholar\n\n\n\n\n\n\n\n \n\nKC, Y. K., Nabeel, A., Iyer, S., & Guttal, V. (2026). Flocking by stopping: A novel mechanism of emergent order in collective movement. arXiv. https://doi.org/10.48550/arXiv.2601.15362\n\n\nNabeel, A., Karichannavar, A., Palathingal, S., Jhawar, J., Brückner, D. B., Danny Raj, M., & Guttal, V. (2025). Discovering stochastic dynamical equations from ecological time series data. The American Naturalist, 734083. https://doi.org/10.1086/734083\n\n\nNabeel, A., Jadhav, V., Danny Raj, M., Sire, C., Theraulaz, G., Escobedo, R., Iyer, S. K., & Guttal, V. (2023). Data-driven discovery of stochastic dynamical equations of collective motion. Physical Biology, 20(5), 056003. https://doi.org/10.1088/1478-3975/ace22d\n\n\nDanny Raj, M., Sivakumar, P., & Nabeel, A. (2022). Inferring the stability of concentrated emulsions from droplet configuration information. The European Physical Journal Special Topics, 232(6), 893–900. https://doi.org/10.1140/epjs/s11734-022-00705-4\n\n\nNabeel, A., & Danny Raj, M. (2022). Disentangling intrinsic motion from neighborhood effects in heterogeneous collective motion. Chaos: An Interdisciplinary Journal of Nonlinear Science, 32(6), 063119. https://doi.org/10.1063/5.0093682\n\n\nSundaresan, M., Nabeel, A., & Sridharan, D. (2017). Mapping distinct timescales of functional interactions among brain networks. 31st Conference on Neural Information Processing Systems, 10. https://pubmed.ncbi.nlm.nih.gov/31285649/\n\n\nMisra, N., Nabeel, A., & Singh, H. (2015). On the Parameterized Complexity of Minimax Approval Voting. Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems, 9. https://dl.acm.org/doi/10.5555/2772879.2772895"
+  }
+]

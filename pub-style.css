@@ -1,0 +1,8 @@
+div.csl-entry {
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    margin-bottom: 1rem; /* Increases space (default is usually 1em) */
+    /*padding-bottom: 1rem; /* Adds internal padding if you want borders */
+}
