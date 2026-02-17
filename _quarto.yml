@@ -11,6 +11,7 @@ website:
       - research.qmd
       - publications.qmd
       - events.qmd
+      - blog.qmd
       - contact.qmd
     right:
       - icon: mortarboard-fill
@@ -20,7 +21,10 @@ website:
       - icon: instagram
         href: https://www.instagram.com/eigenhuman/
       - icon: github
-        href: https://github.com/arshednabeel
+        href: https://github.com/arshednabeel        
+      - icon: rss
+        href: blog.xml
+  site-url: "https://arshednabeel.github.io"
 
 format:
   html:

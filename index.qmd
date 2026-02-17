@@ -1,8 +1,18 @@
 ---
 title: "Arshed Nabeel"
 about:
-    template: jolla
+    template: trestles
     image: images/arshed-photo.jpg
+    image-width: 15em
+    links:
+        - icon: mortarboard-fill
+          href: https://scholar.google.com/citations?user=ejljBbkAAAAJ&hl=en
+        - icon: bluesky
+          href: https://bsky.app/profile/arshed.bsky.social
+        - icon: instagram
+          href: https://www.instagram.com/eigenhuman/
+        - icon: github
+          href: https://github.com/arshednabeel
 
 toc: false
 ---
