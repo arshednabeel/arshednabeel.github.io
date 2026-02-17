@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://arshednabeel.github.io/bio.html</loc>
-    <lastmod>2026-02-08T08:35:04.029Z</lastmod>
+    <loc>https://arshednabeel.github.io/blog.html</loc>
+    <lastmod>2026-02-08T16:23:37.869Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arshednabeel.github.io/publications.html</loc>
+    <lastmod>2026-02-08T06:02:19.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://arshednabeel.github.io/blog/about-ai.html</loc>
+    <lastmod>2026-02-17T16:44:15.474Z</lastmod>
   </url>
   <url>
     <loc>https://arshednabeel.github.io/index.html</loc>
-    <lastmod>2026-02-08T06:02:19.003Z</lastmod>
+    <lastmod>2026-02-17T15:49:10.148Z</lastmod>
   </url>
   <url>
     <loc>https://arshednabeel.github.io/contact.html</loc>
@@ -21,7 +29,7 @@
     <lastmod>2026-02-08T08:33:44.248Z</lastmod>
   </url>
   <url>
-    <loc>https://arshednabeel.github.io/publications.html</loc>
-    <lastmod>2026-02-08T06:02:19.005Z</lastmod>
+    <loc>https://arshednabeel.github.io/bio.html</loc>
+    <lastmod>2026-02-08T08:35:04.029Z</lastmod>
   </url>
 </urlset>

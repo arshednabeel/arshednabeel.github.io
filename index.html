@@ -276,6 +276,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./blog.html"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
@@ -301,6 +305,11 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text"></span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -315,29 +324,50 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="images/arshed-photo.jpg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="images/arshed-photo.jpg" class="about-image
+  rounded " style="width: 15em;">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Arshed Nabeel</h1>
 </div>
 <div class="quarto-title-meta">
   </div>
-</header><main class="content" id="quarto-document-content">
+</header>
+    <div class="about-links">
+  <a href="https://scholar.google.com/citations?user=ejljBbkAAAAJ&amp;hl=en" class="about-link" rel="" target="">
+    <i class="bi bi-mortarboard-fill"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://bsky.app/profile/arshed.bsky.social" class="about-link" rel="" target="">
+    <i class="bi bi-bluesky"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://www.instagram.com/eigenhuman/" class="about-link" rel="" target="">
+    <i class="bi bi-instagram"></i>
+     <span class="about-link-text"></span>
+  </a>
+  <a href="https://github.com/arshednabeel" class="about-link" rel="" target="">
+    <i class="bi bi-github"></i>
+     <span class="about-link-text"></span>
+  </a>
+</div>
+  </div>
+  <div class="about-contents"><main class="content" id="quarto-document-content">
 
 <p>I am a computer scientist in an ecology department wearing a physicist hat.</p>
 <p>Presently a PhD candidate at the Indian Institute of Science, Bengaluru, India, I study the collective movement of fish schools, trying to find unifying principles and patterns that generalise across species and contexts.</p>
 <section id="updates" class="level2">
 <h2 data-anchor-id="updates">Updates</h2>
 <div style="text-align: left">
-<p><strong>Feb 2025</strong> | I’m in the process of migrating my website to this github.io site, powered by <a href="https://quarto.org">Quarto</a>. See my old Wordpress website <a href="https://arshednabeel.wordpress.com">here</a>.</p>
-<p><strong>Jan 2025</strong> | Our new preprint, <a href="https://arxiv.org/abs/2601.15362"><em>‘Flocking by stopping: a mechanism or order in collective movement’</em></a> is out.</p>
+<p><strong>Feb 2026</strong> | Our new paper, <em>‘Flocking by stopping: a mechanism or order in collective movement’</em> has been accepted in <a href="https://doi.org/10.1103/lnrz-wrf4">Physical Review E</a>! Read the preprint version <a href="https://arxiv.org/abs/2601.15362">here</a>.</p>
+<p><strong>Feb 2026</strong> | I’m in the process of migrating my website to this github.io site, powered by <a href="https://quarto.org">Quarto</a>. See my old Wordpress website <a href="https://arshednabeel.wordpress.com">here</a>.</p>
 </div>
 
 
 </section>
-</main>  
+</main></div>
 </div>
  <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -419,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/arshednabeel\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/arshednabeel\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

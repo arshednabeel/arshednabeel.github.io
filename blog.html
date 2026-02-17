@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Publications – Arshed Nabeel</title>
+<title>Blog – Arshed Nabeel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,6 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -92,13 +74,70 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="pub-style.css">
-</head>
+<link rel="alternate" type="application/rss+xml" title="Arshed Nabeel" href="blog.xml" data-external="1"></head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -290,7 +329,7 @@ div.csl-indent {
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="./publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
@@ -298,7 +337,7 @@ div.csl-indent {
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link active" href="./blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -344,14 +383,16 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
+<h1 class="title">Blog</h1>
 </div>
 
 
@@ -368,37 +409,37 @@ div.csl-indent {
 </header>
 
 
-<p><a href="https://scholar.google.com/citations?user=ejljBbkAAAAJ&amp;hl=en">Google Scholar</a></p>
 
 
-<section id="bibliography" class="level1 unnumbered">
 
 
-</section>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1770489000000" data-listing-file-modified-sort="1771346655474" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="978">
+<div class="thumbnail"><a href="./blog/about-ai.html" class="no-external">
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">&nbsp;</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-kc_flocking_2026" class="csl-entry" role="listitem">
-Kumar KC, Y., Nabeel, A., Iyer, S., &amp; Guttal, V. (2026). <em>Flocking by stopping: A novel mechanism of emergent order in collective movement</em>. arXiv. <a href="https://doi.org/10.48550/arXiv.2601.15362">https://doi.org/10.48550/arXiv.2601.15362</a>
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./blog/about-ai.html" class="no-external">Thoughts on AI</a>
+</h3>
+<div class="delink listing-description"><a href="./blog/about-ai.html" class="no-external">
+<p>Subjective and opinionated ruminations on AI and how I have been using it.</p>
+</a></div>
 </div>
-<div id="ref-nabeel_discovering_2025" class="csl-entry" role="listitem">
-Nabeel, A., Karichannavar, A., Palathingal, S., Jhawar, J., Brückner, D. B., Danny Raj, M., &amp; Guttal, V. (2025). Discovering stochastic dynamical equations from ecological time series data. <em>The American Naturalist</em>, 734083. <a href="https://doi.org/10.1086/734083">https://doi.org/10.1086/734083</a>
+<div class="metadata">
+<a href="./blog/about-ai.html" class="no-external">
+<div class="listing-date">
+Feb 8, 2026
 </div>
-<div id="ref-nabeel_data-driven_2023" class="csl-entry" role="listitem">
-Nabeel, A., Jadhav, V., Danny Raj, M., Sire, C., Theraulaz, G., Escobedo, R., Iyer, S. K., &amp; Guttal, V. (2023). Data-driven discovery of stochastic dynamical equations of collective motion. <em>Physical Biology</em>, <em>20</em>(5), 056003. <a href="https://doi.org/10.1088/1478-3975/ace22d">https://doi.org/10.1088/1478-3975/ace22d</a>
+</a>
 </div>
-<div id="ref-m_inferring_2022" class="csl-entry" role="listitem">
-Danny Raj, M., Sivakumar, P., &amp; Nabeel, A. (2022). Inferring the stability of concentrated emulsions from droplet configuration information. <em>The European Physical Journal Special Topics</em>, <em>232</em>(6), 893–900. <a href="https://doi.org/10.1140/epjs/s11734-022-00705-4">https://doi.org/10.1140/epjs/s11734-022-00705-4</a>
 </div>
-<div id="ref-nabeel_disentangling_2022" class="csl-entry" role="listitem">
-Nabeel, A., &amp; Danny Raj, M. (2022). Disentangling intrinsic motion from neighborhood effects in heterogeneous collective motion. <em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>, <em>32</em>(6), 063119. <a href="https://doi.org/10.1063/5.0093682">https://doi.org/10.1063/5.0093682</a>
 </div>
-<div id="ref-sundaresan_mapping_2017" class="csl-entry" role="listitem">
-Sundaresan, M., Nabeel, A., &amp; Sridharan, D. (2017). Mapping distinct timescales of functional interactions among brain networks. <em>31st Conference on Neural Information Processing Systems</em>, 10. <a href="https://pubmed.ncbi.nlm.nih.gov/31285649/">https://pubmed.ncbi.nlm.nih.gov/31285649/</a>
-</div>
-<div id="ref-misra_parameterized_2015" class="csl-entry" role="listitem">
-Misra, N., Nabeel, A., &amp; Singh, H. (2015). On the <span>Parameterized</span> <span>Complexity</span> of <span>Minimax</span> <span>Approval</span> <span>Voting</span>. <em>Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems</em>, 9. <a href="https://dl.acm.org/doi/10.5555/2772879.2772895">https://dl.acm.org/doi/10.5555/2772879.2772895</a>
-</div>
-</div></section></div></main> <!-- /main -->
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
