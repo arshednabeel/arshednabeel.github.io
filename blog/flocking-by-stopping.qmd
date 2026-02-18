@@ -1,7 +1,7 @@
 ---
 title: Flocking by stopping
 description: "In collective movement, stopping and slowing down can give rise to surprising new routes to achieving globally ordered motion."
-date: "02/08/2026"
+date: 2026-02-17
 draft: true
 
 ---
