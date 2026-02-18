@@ -1,7 +1,7 @@
 ---
 title: Thoughts on AI
 description: "Subjective and opinionated ruminations on AI and how I have been using it."
-date: "02/08/2026"
+date: "17/08/2026"
 
 ---
 
