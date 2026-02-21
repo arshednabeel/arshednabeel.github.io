@@ -1,6 +1,7 @@
 img.about-image {
   border-radius: 50% !important;
   object-fit: cover !important;   /* Prevents the image from squishing */
+  margin-top: 1.5rem !important;
 }
 
 .about-links {
