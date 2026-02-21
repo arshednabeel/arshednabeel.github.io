@@ -3,7 +3,17 @@ img.about-image {
   object-fit: cover !important;   /* Prevents the image from squishing */
 }
 
+.about-links {
+  display: flex !important;
+  flex-direction: row !important;     /* Forces them into a line */
+  flex-wrap: wrap !important;         /* Allows wrapping to a new line if the screen is tiny */
+  justify-content: center !important; /* Centers them under your picture */
+  gap: 15px;                          /* Adds breathing room between the links */
+}
+
 .about-links .about-link {
   border: none !important;
   background-color: transparent !important;
+  width: auto !important; 
+  margin: 0 !important;
 }
