@@ -3,6 +3,7 @@ project:
 
 website:
   title: "Arshed Nabeel"
+  favicon: agent.svg
   navbar:
     left:
       - href: index.qmd
