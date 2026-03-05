@@ -2,8 +2,8 @@
 
 ::: {style="text-align: left"}
 
-**Feb 2026** | Our new paper, _'Flocking by stopping: a mechanism for order in collective movement'_ is now out in [Physical Review E](https://doi.org/10.1103/lnrz-wrf4)!
+**Feb 2026** | Our new paper, _'Flocking by stopping: a mechanism for order in collective movement'_ is now out in [Physical Review E](https://doi.org/10.1103/lnrz-wrf4)! Read my [blog post about the paper](blog/flocking-by-stopping.qmd).
 
-**Feb 2026** | I'm in the process of migrating my website to this github.io site, powered by [Quarto](https://quarto.org). See my old Wordpress website [here](https://arshednabeel.wordpress.com).
+**Feb 2026** | I have migrated my website to this github.io site, powered by [Quarto](https://quarto.org). My old Wordpress websitewas [here](https://arshednabeel.wordpress.com).
 
 :::

@@ -1,7 +1,7 @@
 ---
 title: "Publications"
-bibliography: publications.bib
-csl: apa-cv.csl
+bibliography: "./references/publications.bib"
+csl: "./references/apa-cv.csl"
 reference-section-title: "&nbsp;"
 css: pub-style.css
 toc: false

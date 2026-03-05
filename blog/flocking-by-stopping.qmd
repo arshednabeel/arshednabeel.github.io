@@ -1,9 +1,50 @@
 ---
 title: Flocking by stopping
 description: "In collective movement, stopping and slowing down can give rise to surprising new routes to achieving globally ordered motion."
-date: 2026-02-17
-draft: true
-
+date: 2026-03-05
+bibliography: "../references/flocking.bib"
+csl: "../references/aps.csl"
+reference-location: margin
+toc: false
 ---
 
-This is a test blog post. Does this get renedered correctly?
+Nature is abound with examples of *collective movement*, where large groups of animals---such as bird flocks, fish schools, herbivore herds etc.---move together in perfect synchrony. How do animals coordinate their movement across such large group sizes? Somewhat surprisingly, animals can achieve this just by coordinating their movement with a handful of their neighbours, and there are simple computational models such as the [*Vicsek model*](https://en.wikipedia.org/wiki/Vicsek_model) that elegantly demonstrate this. In these models, each individual interacts with (i.e. copies the movement direction of) a handful of their neighbours, and this is sufficient to achieve globally ordered movement.
+
+## Pairwise interactions
+Presumably, animals may have cognitive and sensory limitations, that prevent them from sensing and processing the movement directions of many individuals at a time; and some studies have indeed shown evidence that they pay attention to only one or a few neighbours at a time. This brings us to the question; can we achieve ordered movement with *pairwise interactions* alone, where each animal only looks at one random neighbour at a time and copies its movement direction? 
+
+The answer is, yes and no. Consider the following simple model with pairwise interactions:
+
+- Each individuals moves at a constant speed, in some chosen direction.
+- Individuals can change their directions occasionally, and choose a new random direction.
+- Individuals can also change their direction by choosing a random neighbour and copying its direction.
+
+This simple model of pairwise interactions can create ordered motion in small groups, but the order disappears as the group size increases[@jhawar_noise_2020]. It seems that for ordered movement of large groups, some form of *'higher-order'*^[I have used the term *'higher order'* in a slightly different sense than many physicists typically use the term. 'Higher order' here just means that the individual looks at the directions of multiple neighbours at a time.] interactions, where individuals can aggregate information about the movement direction of multiple neighbours, is necessary. 
+
+## Flocking by stopping -- global order through pairwise interactions.
+In [our recently published paper](https://doi.org/10.1103/lnrz-wrf4)[@kc_flocking_2026], we show a surprising new way to achieve ordered movement, even when each individual interacts with only one neighbour at a time! The key to this is *intermittent* or *stop-and-go* movement, where individuals can occasionally stop. Intermittent movement is common in the animal kingdom, across many species from locusts to sheep.
+
+{{< video https://www.youtube.com/embed/3AvfXeA_XLs >}}
+
+
+Consider a simple modification of the above pairwise model, now with stopping included:
+
+- Each individuals either moves at a constant speed in some chosen direction, or remains stationary.
+- Individuals can change their directions occasionally, and choose a new random direction. 
+- Individuals can also change their movement state randomly, i.e moving individuals can stop and stopped individuals can start moving in some random direction.
+- Individuals can also change their direction by choosing a random neighbour and copying its direction. 
+- **If the chosen neighbour is moving in the opposite direction of the individual's current movement** (i.e. the angle between the individual's direction and the neighbour's direction is greater than 90°), **the individual can also stop moving, instead of copying the neighbour.**
+- Stopped individuals can start moving by copying another moving individual.
+
+The new interaction rule in which the individual stops moving instead of directly turning, which we call the *halting interaction*, is the crucial ingredient. We demonstrate in the paper that this updated model with stopping  can enable ordered motion, even in very large group sizes, with just pairwise interactions. The video demonstrates this clearly: without halting interactions, the individuals do not seem to synchronise their movement, while with the halting interaction, individuals quickly achieves order and starts moving in a coherent direction.^[Note that the interactions here are with random neighbours, and not spatially local. Individuals choose a random neighbour to interact with, from anywhere in the group, regardless of whether they are near or far.]
+
+# How does stopping lead to order?
+How does the ability to stop, and the new halting interaction, lead to order? We give the a detailed mathematical exposition of this phenomenon in the paper, but this can also be understood intuitively. 
+
+In the classical pairwise interaction model (no stopping), each individual chooses a random individual as its neighbour, and copies its direction. Assuming the movement of individuals starts out as fully disordered, such pairwise copying cannot 'break symmetry' and cause order in large groups.^[Interestingly, pairwise interaction *can* break symmetry and create ordered motion in small 'mesoscale' groups @jhawar_noise_2020 @biancalani_noise_2014.]
+However, if you think about the halting interaction carefully, you will find out that it can break symmetry. When the random neighbour is broadly with your current movement direction, the neighbours direction is copied. On the other hand, when the neighbour is misaligned, the probability of direct copying is reduced, since you may also halt. In short, halting interactions helps breaks symmetry in the system and establishes a feedback loop that creates order.
+
+In summary, our work demonstrates how animals can overcome potential perceptual and cognitive limitations through natural mechanisms of stop-and-go movement and achieve group-level order: inactivity is not merely rest, but can act as a new mechanism for achieving group consensus. The results may open new avenues towards understanding emergent order in real-world animal groups, as well as advancing physical theories of flocking in various systems.
+
+
+
