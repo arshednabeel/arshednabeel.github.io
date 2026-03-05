@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "Thoughts on AI\n\n\nSubjective and opinionated ruminations on AI and how I have been using it.\n\n\n\n\n\nFeb 17, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Flocking by stopping\n\n\nIn collective movement, stopping and slowing down can give rise to surprising new routes to achieving globally ordered motion.\n\n\n\n\n\nMar 5, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThoughts on AI\n\n\nSubjective and opinionated ruminations on AI and how I have been using it.\n\n\n\n\n\nFeb 17, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications.html",
@@ -32,7 +32,7 @@
     "href": "index.html#updates",
     "title": "Arshed Nabeel",
     "section": "Updates",
-    "text": "Updates\n\nFeb 2026 | Our new paper, ‘Flocking by stopping: a mechanism for order in collective movement’ is now out in Physical Review E!\nFeb 2026 | I’m in the process of migrating my website to this github.io site, powered by Quarto. See my old Wordpress website here."
+    "text": "Updates\n\nFeb 2026 | Our new paper, ‘Flocking by stopping: a mechanism for order in collective movement’ is now out in Physical Review E! Read my blog post about the paper.\nFeb 2026 | I have migrated my website to this github.io site, powered by Quarto. My old Wordpress websitewas here."
   },
   {
     "objectID": "contact.html",
@@ -82,6 +82,27 @@
     "title": "Events",
     "section": "",
     "text": "Conferences and Workshops\nAlma Dal Co School on Collective Behaviour, 2025\nIstituto Veneto di Scienze, Lettere ed Arti (IVSLA), Venice, Italy. September-October 2025\nPoster: Towards unifying principles of fish schooling dynamics\nBehaviour 2025 (38th International Ethological Congress)\nKolkata, India. August 2025\nPoster: Towards unifying principles of fish schooling dynamics (Best Poster Award)\nKonstanz School of Collective Behaviour, 2025\nUniversity of Konstanz, Konstanz, Germany. July-August 2025\nConference on Complex Systems, 2025\nUniversity of Exeter, Exeter, United Kingdom. August-September 2024\nTalk: Towards unifying principles of fish schooling dynamics\nCollective Behaviour Workshop\nIsaac Newton Institute of Mathematical Sciences, Cambridge, United Kingdom. August 2023\nTalk: Discovering stochastic dynamical models from time series data (video)\n\n\nInvited Talks and Lectures\nLecture: Self organization and emergence in living systems\nSummer School on Physics of Living Systems for high-school students\nJawaharlal Nehru Planetarium, Bengaluru, India. April 2025\nTutorial: From data to models: discovering dynamical models from time series data\nICTS-ICTP Winter School on Quantitative Systems Biology\nNational Institute of Biological Sciences, Bengaluru, India. January 2025\nTutorial: Introduction to computational neuroscience\nWorkshop on Soft Computing for Biomedical Applications\nMar Baselios College of Engineering and Technology, Thiruvananthapuram, India. July 2017\nTalk: Networks of the brain: Exploring Brain Function Through Data and Computation (video)\nIISc CSA Summer School for undergraduate students\nDepartment of Computer Science and Automation, Indian Institute of Science, Bengaluru, India. July 2016"
+  },
+  {
+    "objectID": "blog/flocking-by-stopping.html",
+    "href": "blog/flocking-by-stopping.html",
+    "title": "Flocking by stopping",
+    "section": "",
+    "text": "Nature is abound with examples of collective movement, where large groups of animals—such as bird flocks, fish schools, herbivore herds etc.—move together in perfect synchrony. How do animals coordinate their movement across such large group sizes? Somewhat surprisingly, animals can achieve this just by coordinating their movement with a handful of their neighbours, and there are simple computational models such as the Vicsek model that elegantly demonstrate this. In these models, each individual interacts with (i.e. copies the movement direction of) a handful of their neighbours, and this is sufficient to achieve globally ordered movement."
+  },
+  {
+    "objectID": "blog/flocking-by-stopping.html#pairwise-interactions",
+    "href": "blog/flocking-by-stopping.html#pairwise-interactions",
+    "title": "Flocking by stopping",
+    "section": "Pairwise interactions",
+    "text": "Pairwise interactions\nPresumably, animals may have cognitive and sensory limitations, that prevent them from sensing and processing the movement directions of many individuals at a time; and some studies have indeed shown evidence that they pay attention to only one or a few neighbours at a time. This brings us to the question; can we achieve ordered movement with pairwise interactions alone, where each animal only looks at one random neighbour at a time and copies its movement direction?\nThe answer is, yes and no. Consider the following simple model with pairwise interactions:\n\nEach individuals moves at a constant speed, in some chosen direction.\nIndividuals can change their directions occasionally, and choose a new random direction.\nIndividuals can also change their direction by choosing a random neighbour and copying its direction.\n\nThis simple model of pairwise interactions can create ordered motion in small groups, but the order disappears as the group size increases [1]. It seems that for ordered movement of large groups, some form of ‘higher-order’1 interactions, where individuals can aggregate information about the movement direction of multiple neighbours, is necessary.\n1 I have used the term ‘higher order’ in a slightly different sense than many physicists typically use the term. ‘Higher order’ here just means that the individual looks at the directions of multiple neighbours at a time."
+  },
+  {
+    "objectID": "blog/flocking-by-stopping.html#flocking-by-stopping-global-order-through-pairwise-interactions.",
+    "href": "blog/flocking-by-stopping.html#flocking-by-stopping-global-order-through-pairwise-interactions.",
+    "title": "Flocking by stopping",
+    "section": "Flocking by stopping – global order through pairwise interactions.",
+    "text": "Flocking by stopping – global order through pairwise interactions.\nIn our recently published paper [2], we show a surprising new way to achieve ordered movement, even when each individual interacts with only one neighbour at a time! The key to this is intermittent or stop-and-go movement, where individuals can occasionally stop. Intermittent movement is common in the animal kingdom, across many species from locusts to sheep.\n\nConsider a simple modification of the above pairwise model, now with stopping included:\n\nEach individuals either moves at a constant speed in some chosen direction, or remains stationary.\nIndividuals can change their directions occasionally, and choose a new random direction.\nIndividuals can also change their movement state randomly, i.e moving individuals can stop and stopped individuals can start moving in some random direction.\nIndividuals can also change their direction by choosing a random neighbour and copying its direction.\nIf the chosen neighbour is moving in the opposite direction of the individual’s current movement (i.e. the angle between the individual’s direction and the neighbour’s direction is greater than 90°), the individual can also stop moving, instead of copying the neighbour.\nStopped individuals can start moving by copying another moving individual.\n\nThe new interaction rule in which the individual stops moving instead of directly turning, which we call the halting interaction, is the crucial ingredient. We demonstrate in the paper that this updated model with stopping can enable ordered motion, even in very large group sizes, with just pairwise interactions. The video demonstrates this clearly: without halting interactions, the individuals do not seem to synchronise their movement, while with the halting interaction, individuals quickly achieves order and starts moving in a coherent direction.2\n2 Note that the interactions here are with random neighbours, and not spatially local. Individuals choose a random neighbour to interact with, from anywhere in the group, regardless of whether they are near or far."
   },
   {
     "objectID": "bio.html",

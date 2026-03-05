@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/blog/flocking-by-stopping.html",
       "/blog/about-ai.html"
     ]
   }
