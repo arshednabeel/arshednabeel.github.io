@@ -6,7 +6,7 @@ reference-location: margin
 citation-location: margin
 ---
 
-My research interests sit at the intersection of biology, computer science and applied mathematics. My research follows two broad themes that often interleave:
+My research interests sit at the intersection of biology, computer science and applied mathematics. Broadly, I build and study **data-driven, top-down models to understand emergent phenomena in a range of systems**. This means that my research follows two broad themes that interleave:
 
 **Collective behaviour and emergent phenomena.** I am fascinated by how complex emergent group behaviours can result from interactions among simple units. I have studied collective emergent phenomena in various systems such as brain networks, droplet assemblies and fish schools. 
 
@@ -26,7 +26,7 @@ For my Ph. D. research, I study the collective movement of fish schools, using a
 
 During my Ph. D., I developed tools and techniques to _discover_ governing equations directly from datasets. I created a Python library, [PyDaddy](https://pydaddy.readthedocs.io) (**Py**thon library for **Da**ta **D**riven **Dy**namics) that allows you to discover and validate stochastic dynamical systems from time series data[@nabeel_discovering_2025].
 
-This data-driven model discovery approach have become the main workhorse of my research on collective movement. However, the technique is quite general: I have since then started collaborations where we apply the techique to other problems, such as population dynamics of fish populations in the wide. I will hopefully have more to say on this soon!
+This data-driven model discovery approach have become the main workhorse of my research on collective movement. However, the technique is quite general: In a subsequent colllaboration, I have applied these techniques to analyze the population dynamics of Trinidadian guppies and understand their resilience and vulnerability [@jaggi_noise_2026] _(with [Harman Jaggi](https://sites.google.com/stanford.edu/harmanjaggi/))_
 
 ## Disentangling intrinsic behaviour from collective effects
 
