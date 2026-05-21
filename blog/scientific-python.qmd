@@ -1,0 +1,71 @@
+---
+title: Python for scientific computation
+description: "This article provides setup guidelines for a minimal, no-nonsense Python installation for scientific computing."
+date: 2026-05-21
+reference-location: margin
+draft: false
+
+---
+
+
+This article is supposed to be a minimal guide into setting up a Python environment on your system for scientific computing. The target audience is researchers with little to no prior exposure to working with Python, but needs to use Python for simulations, data analysis etc.
+
+Broadly, your minimal Python installation will have the following components:
+
+- **A package and environment manager**, which allows you to install and manage different python packages. You may also need to create different environments for different projects, for e.g. when two different libraries need different Python versions that are incompatible with each other (see below).
+- **An IDE (integrated development environment) or code editor**, which allows you to write and edit code.
+- **Python (obviously)**. Usually, your system will come with a version of Python preinstalled, but it is a very bad idea to use or modify this. Therefore, use of a package manager to install a suitable version of Python is highly recommended.
+- **Python libraries and packages**: Depending on your use case, you will need to install various Python libraries and packages, such as NumPy, SciPy, JAX, etc. Usually, you will do this through your package/environment manager.
+
+The following sections walk you through some recommendations for each of these components, and how to set these up.
+
+# Package and environment manager – miniforge
+
+The first thing you will need to install is a suitable environment and package manager, and the choice I would recommend is [miniforge](https://conda-forge.org/download/). Follow the instructions at the link to install miniforge on your system. Once installed, you can:
+
+- Install new Python packages on your system, using `conda install` ([see instructions here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html)).
+- Create and manage _environments_, using `conda create` and `conda activate` (see below, and [the instructions here](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)).
+
+## Why miniforge?
+
+A default option that many people use in scientific computing is Anaconda. However, I recommend against using Anaconda: it comes as a giant 'batteries included' installation, with a lot of libraries and desktop tools preinstalled, many of which you will never need. Miniconda was a minimal alternative for Anaconda, which came with only the conda installer and package manager, letting the user in complete control of what packages they choose to install. Miniconda would have been my default recommendation until very recently.
+
+However, Anaconda Inc. is a for-profit company, which recently made some [controversial changes to their licensing terms](https://www.reddit.com/r/bioinformatics/comments/1emekxo/anaconda_licensing_terms_and_reproducible_science/) which makes it difficult to recommend Anaconda or miniconda any longer: miniforge is designed as an open-source, drop-in replacement that circumvents these issues.
+
+## What are environments?
+
+Generally, when you are working on a project, you will need to install multiple libraries or packages that your code will depend on (like `numpy` or `scikit-learn`, for example). Sometimes, two packages you need, for different projects, may depend on different versions of the same package: for example, package A might need NumPy version 2.3 or later, but package B might be older and might work only on version 1.9. In such cases, environments can solve the conflict. You can create two different environments, one with NumPy 1.9 and another with 2.3, and switch between the two as required.
+
+The general recommendation, if you are working on multiple projects, is to have a separate environment for each project. That being said, for a beginner scientist, it is often okay to have one environment where you install all your packages (don't tell anyone that you heard this from me 🤫). If something breaks, you can always clear or delete the environment and start over.
+
+## The modern alternatives: uv and pixi
+
+There are more modern package managers, like [uv](https://docs.astral.sh/uv/) and [pixi](https://pixi.prefix.dev/latest/), which use a different philosophy of managing enviroments. These have many advantages, like speed and reproducibility. The way they manage environments might be slightly confusing for a beginner, but do check them out.
+
+# IDE and code editor – VS Code and Jupyter
+
+The next thing you will need is a good code editor or IDE. This is where you will write code in. Indeed, you can write code in your default text editor (please do not subject yourself to this torture), or use command-line code editors like vim (if this is you, why are you even reading this?). The default, and excellent, choice for your IDE is [Visual Studio Code](https://code.visualstudio.com). You can configure it with extensions to be as minimal or as feature rich as you need it to be. A code editor will bring a lot of _quality-of-life_ improvements, like syntax highlighting, auto-complete, catching typos and errors as you type, and these days, AI-assisted code completion.
+
+For scientific computing, a _notebook_ environment will also be very useful. Basically, notebooks will allow you to organize, code, output and textual notes (including math equations in $\LaTeX$) together in a single file, which helps you logically organize your work. [Jupyter notebooks](https://jupyter.org) are by far the popular choice, which can be installed using `conda install jupyter`. A Jupyter extension is available for VS Code, which allows you to work with notebooks from within your IDE.
+
+## A modern notebook alternative: marimo
+
+Recently, [marimo](https://marimo.io) has emerged as a fast and lightweight alternative to Jupyter. A big advantage of marimo is its reactivity: when you edit and rerun a code cell, all the code that depends on this code cell reruns automatically. This allows you to write code with interactive elements (like buttons and sliders) that control your plots, and helps you avoid convoluted runtime bugs that Jupyter notebooks are notorious for. I have pretty much completely switched to marimo, I would recommend you perhaps do the same, unless you have legacy reasons (e.g. the need to work with existing codebases that are mostly Jupyter-based) to stick with Jupyter.
+
+# Python, libraries and packages
+
+Python is a relatively mature language, but is still gets regular updates. This begs the question; which version of Python to install?
+My rule of thumb is to install a Python version that is 1-2 versions before the latest stable release. This is to avoid the rare but real possibility of some packages bugging out with the cutting-edge release. Sometimes, some package you need will require a specific version of Python, in which case create an environment and install that version of Python within that environment.^[This is the power of environments: you can have multiple versions of Python coexisting on your system, in different environments, without messing with each other.]
+
+What packages and libraries to install? This will largely depend on what you are working on. You will almost certainly need [NumPy](https://numpy.org) (for numerical computations) and [Matplotlib](https://matplotlib.org) (for plotting and visualization). You will also find [SciPy](https://scipy.org) useful, as it offers a wide range of advanced scientific computing tools. Other popular libraries worth checking out, based on your needs, are:
+
+- [pandas](https://pandas.pydata.org) for R-style dataframes. Also consider [Polars](https://pola.rs) as a faster modern alternative.
+- [statsmodels](https://www.statsmodels.org/stable/index.html) and [seaborn](https://seaborn.pydata.org) for R-style data analysis and visualization.
+- [scikit-Learn](https://scikit-learn.org/stable/) for classical machine learning.
+- [PyTorch](https://pytorch.org) for "modern" deep learning and AI.
+- [JAX](https://docs.jax.dev/en/latest/index.html) for GPU-optimized, differentiable computations on arrays (if you don't know what that means, you probably don't need it yet). It also has an ecosystem of tools, such as deep-learning libraries built around it.
+- [Astropy](https://www.astropy.org): mainly aimed for astronomy applications, but offers a range of powerful scientific computing tools.
+- [PySINDy](https://pysindy.readthedocs.io/en/latest/), [PySR](https://ai.damtp.cam.ac.uk/pysr/v1.5.9/), and [PyDaddy](https://pydaddy.readthedocs.io/en/latest/) (written by yours truly!) for data-driven modelling.
+- _And many more!_
+
+Hopefully, this is enough information to get you started on your scientific computing journey in Python. Do let me know if you have any comments or suggestions to improve these guidelines!
