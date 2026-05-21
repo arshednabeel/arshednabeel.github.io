@@ -4,7 +4,7 @@ description: "This article provides setup guidelines for a minimal, no-nonsense 
 date: 2026-05-21
 reference-location: margin
 draft: false
-
+toc: true
 ---
 
 
