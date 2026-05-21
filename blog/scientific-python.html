@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-05-21">
+<meta name="description" content="This article provides setup guidelines for a minimal, no-nonsense Python installation for scientific computing.">
 
-<title>Publications – Arshed Nabeel</title>
+<title>Python for scientific computation – Arshed Nabeel</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,52 +22,32 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./agent.svg" rel="icon" type="image/svg+xml">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../agent.svg" rel="icon" type="image/svg+xml">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-f93c2b1f3f0577f377aefa4848a86a36.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,12 +76,40 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="pub-style.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -268,7 +278,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Arshed Nabeel</span>
     </a>
   </div>
@@ -279,31 +289,31 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./bio.html"> 
+    <a class="nav-link" href="../bio.html"> 
 <span class="menu-text">Bio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./publications.html" aria-current="page"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./events.html"> 
+    <a class="nav-link" href="../events.html"> 
 <span class="menu-text">Events</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./contact.html"> 
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -329,7 +339,7 @@ div.csl-indent {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./blog.xml"> <i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../blog.xml"> <i class="bi bi-rss" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -345,21 +355,50 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#package-and-environment-manager-miniforge" id="toc-package-and-environment-manager-miniforge" class="nav-link active" data-scroll-target="#package-and-environment-manager-miniforge">Package and environment manager – miniforge</a>
+  <ul class="collapse">
+  <li><a href="#why-miniforge" id="toc-why-miniforge" class="nav-link" data-scroll-target="#why-miniforge">Why miniforge?</a></li>
+  <li><a href="#what-are-environments" id="toc-what-are-environments" class="nav-link" data-scroll-target="#what-are-environments">What are environments?</a></li>
+  <li><a href="#the-modern-alternatives-uv-and-pixi" id="toc-the-modern-alternatives-uv-and-pixi" class="nav-link" data-scroll-target="#the-modern-alternatives-uv-and-pixi">The modern alternatives: uv and pixi</a></li>
+  </ul></li>
+  <li><a href="#ide-and-code-editor-vs-code-and-jupyter" id="toc-ide-and-code-editor-vs-code-and-jupyter" class="nav-link" data-scroll-target="#ide-and-code-editor-vs-code-and-jupyter">IDE and code editor – VS Code and Jupyter</a>
+  <ul class="collapse">
+  <li><a href="#a-modern-notebook-alternative-marimo" id="toc-a-modern-notebook-alternative-marimo" class="nav-link" data-scroll-target="#a-modern-notebook-alternative-marimo">A modern notebook alternative: marimo</a></li>
+  </ul></li>
+  <li><a href="#python-libraries-and-packages" id="toc-python-libraries-and-packages" class="nav-link" data-scroll-target="#python-libraries-and-packages">Python, libraries and packages</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Publications</h1>
+<h1 class="title">Python for scientific computation</h1>
 </div>
 
+<div>
+  <div class="description">
+    This article provides setup guidelines for a minimal, no-nonsense Python installation for scientific computing.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 21, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -369,43 +408,67 @@ div.csl-indent {
 </header>
 
 
-<p><a href="https://scholar.google.com/citations?user=ejljBbkAAAAJ&amp;hl=en">Google Scholar</a></p>
-
-
-<section id="bibliography" class="level1 unnumbered">
+<p>This article is supposed to be a minimal guide into setting up a Python environment on your system for scientific computing. The target audience is researchers with little to no prior exposure to working with Python, but needs to use Python for simulations, data analysis etc.</p>
+<p>Broadly, your minimal Python installation will have the following components:</p>
+<ul>
+<li><strong>A package and environment manager</strong>, which allows you to install and manage different python packages. You may also need to create different environments for different projects, for e.g.&nbsp;when two different libraries need different Python versions that are incompatible with each other (see below).</li>
+<li><strong>An IDE (integrated development environment) or code editor</strong>, which allows you to write and edit code.</li>
+<li><strong>Python (obviously)</strong>. Usually, your system will come with a version of Python preinstalled, but it is a very bad idea to use or modify this. Therefore, use of a package manager to install a suitable version of Python is highly recommended.</li>
+<li><strong>Python libraries and packages</strong>: Depending on your use case, you will need to install various Python libraries and packages, such as NumPy, SciPy, JAX, etc. Usually, you will do this through your package/environment manager.</li>
+</ul>
+<p>The following sections walk you through some recommendations for each of these components, and how to set these up.</p>
+<section id="package-and-environment-manager-miniforge" class="level1">
+<h1>Package and environment manager – miniforge</h1>
+<p>The first thing you will need to install is a suitable environment and package manager, and the choice I would recommend is <a href="https://conda-forge.org/download/">miniforge</a>. Follow the instructions at the link to install miniforge on your system. Once installed, you can:</p>
+<ul>
+<li>Install new Python packages on your system, using <code>conda install</code> (<a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-pkgs.html">see instructions here</a>).</li>
+<li>Create and manage <em>environments</em>, using <code>conda create</code> and <code>conda activate</code> (see below, and <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">the instructions here</a>).</li>
+</ul>
+<section id="why-miniforge" class="level2">
+<h2 class="anchored" data-anchor-id="why-miniforge">Why miniforge?</h2>
+<p>A default option that many people use in scientific computing is Anaconda. However, I recommend against using Anaconda: it comes as a giant ‘batteries included’ installation, with a lot of libraries and desktop tools preinstalled, many of which you will never need. Miniconda was a minimal alternative for Anaconda, which came with only the conda installer and package manager, letting the user in complete control of what packages they choose to install. Miniconda would have been my default recommendation until very recently.</p>
+<p>However, Anaconda Inc.&nbsp;is a for-profit company, which recently made some <a href="https://www.reddit.com/r/bioinformatics/comments/1emekxo/anaconda_licensing_terms_and_reproducible_science/">controversial changes to their licensing terms</a> which makes it difficult to recommend Anaconda or miniconda any longer: miniforge is designed as an open-source, drop-in replacement that circumvents these issues.</p>
+</section>
+<section id="what-are-environments" class="level2">
+<h2 class="anchored" data-anchor-id="what-are-environments">What are environments?</h2>
+<p>Generally, when you are working on a project, you will need to install multiple libraries or packages that your code will depend on (like <code>numpy</code> or <code>scikit-learn</code>, for example). Sometimes, two packages you need, for different projects, may depend on different versions of the same package: for example, package A might need NumPy version 2.3 or later, but package B might be older and might work only on version 1.9. In such cases, environments can solve the conflict. You can create two different environments, one with NumPy 1.9 and another with 2.3, and switch between the two as required.</p>
+<p>The general recommendation, if you are working on multiple projects, is to have a separate environment for each project. That being said, for a beginner scientist, it is often okay to have one environment where you install all your packages (don’t tell anyone that you heard this from me 🤫). If something breaks, you can always clear or delete the environment and start over.</p>
+</section>
+<section id="the-modern-alternatives-uv-and-pixi" class="level2">
+<h2 class="anchored" data-anchor-id="the-modern-alternatives-uv-and-pixi">The modern alternatives: uv and pixi</h2>
+<p>There are more modern package managers, like <a href="https://docs.astral.sh/uv/">uv</a> and <a href="https://pixi.prefix.dev/latest/">pixi</a>, which use a different philosophy of managing enviroments. These have many advantages, like speed and reproducibility. The way they manage environments might be slightly confusing for a beginner, but do check them out.</p>
+</section>
+</section>
+<section id="ide-and-code-editor-vs-code-and-jupyter" class="level1">
+<h1>IDE and code editor – VS Code and Jupyter</h1>
+<p>The next thing you will need is a good code editor or IDE. This is where you will write code in. Indeed, you can write code in your default text editor (please do not subject yourself to this torture), or use command-line code editors like vim (if this is you, why are you even reading this?). The default, and excellent, choice for your IDE is <a href="https://code.visualstudio.com">Visual Studio Code</a>. You can configure it with extensions to be as minimal or as feature rich as you need it to be. A code editor will bring a lot of <em>quality-of-life</em> improvements, like syntax highlighting, auto-complete, catching typos and errors as you type, and these days, AI-assisted code completion.</p>
+<p>For scientific computing, a <em>notebook</em> environment will also be very useful. Basically, notebooks will allow you to organize, code, output and textual notes (including math equations in <span class="math inline">\(\LaTeX\)</span>) together in a single file, which helps you logically organize your work. <a href="https://jupyter.org">Jupyter notebooks</a> are by far the popular choice, which can be installed using <code>conda install jupyter</code>. A Jupyter extension is available for VS Code, which allows you to work with notebooks from within your IDE.</p>
+<section id="a-modern-notebook-alternative-marimo" class="level2">
+<h2 class="anchored" data-anchor-id="a-modern-notebook-alternative-marimo">A modern notebook alternative: marimo</h2>
+<p>Recently, <a href="https://marimo.io">marimo</a> has emerged as a fast and lightweight alternative to Jupyter. A big advantage of marimo is its reactivity: when you edit and rerun a code cell, all the code that depends on this code cell reruns automatically. This allows you to write code with interactive elements (like buttons and sliders) that control your plots, and helps you avoid convoluted runtime bugs that Jupyter notebooks are notorious for. I have pretty much completely switched to marimo, I would recommend you perhaps do the same, unless you have legacy reasons (e.g.&nbsp;the need to work with existing codebases that are mostly Jupyter-based) to stick with Jupyter.</p>
+</section>
+</section>
+<section id="python-libraries-and-packages" class="level1 page-columns page-full">
+<h1>Python, libraries and packages</h1>
+<p>Python is a relatively mature language, but is still gets regular updates. This begs the question; which version of Python to install? My rule of thumb is to install a Python version that is 1-2 versions before the latest stable release. This is to avoid the rare but real possibility of some packages bugging out with the cutting-edge release. Sometimes, some package you need will require a specific version of Python, in which case create an environment and install that version of Python within that environment.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="no-row-height column-margin column-container"><div id="fn1"><p><sup>1</sup>&nbsp;This is the power of environments: you can have multiple versions of Python coexisting on your system, in different environments, without messing with each other.</p></div></div><p>What packages and libraries to install? This will largely depend on what you are working on. You will almost certainly need <a href="https://numpy.org">NumPy</a> (for numerical computations) and <a href="https://matplotlib.org">Matplotlib</a> (for plotting and visualization). You will also find <a href="https://scipy.org">SciPy</a> useful, as it offers a wide range of advanced scientific computing tools. Other popular libraries worth checking out, based on your needs, are:</p>
+<ul>
+<li><a href="https://pandas.pydata.org">pandas</a> for R-style dataframes. Also consider <a href="https://pola.rs">Polars</a> as a faster modern alternative.</li>
+<li><a href="https://www.statsmodels.org/stable/index.html">statsmodels</a> and <a href="https://seaborn.pydata.org">seaborn</a> for R-style data analysis and visualization.</li>
+<li><a href="https://scikit-learn.org/stable/">scikit-Learn</a> for classical machine learning.</li>
+<li><a href="https://pytorch.org">PyTorch</a> for “modern” deep learning and AI.</li>
+<li><a href="https://docs.jax.dev/en/latest/index.html">JAX</a> for GPU-optimized, differentiable computations on arrays (if you don’t know what that means, you probably don’t need it yet). It also has an ecosystem of tools, such as deep-learning libraries built around it.</li>
+<li><a href="https://www.astropy.org">Astropy</a>: mainly aimed for astronomy applications, but offers a range of powerful scientific computing tools.</li>
+<li><a href="https://pysindy.readthedocs.io/en/latest/">PySINDy</a>, <a href="https://ai.damtp.cam.ac.uk/pysr/v1.5.9/">PySR</a>, and <a href="https://pydaddy.readthedocs.io/en/latest/">PyDaddy</a> (written by yours truly!) for data-driven modelling.</li>
+<li><em>And many more!</em></li>
+</ul>
+<p>Hopefully, this is enough information to get you started on your scientific computing journey in Python. Do let me know if you have any comments or suggestions to improve these guidelines!</p>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">&nbsp;</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
-<div id="ref-jaggi_noise_2026" class="csl-entry" role="listitem">
-Jaggi, H., Bassar, R., Travis, J., Nabeel, A., Reznick, D., &amp; Levin, S. (2026). Noise and determinism in trinidadian guppy population dynamics. <em>bioRxiv</em>. <a href="https://doi.org/10.64898/2026.05.17.725717">https://doi.org/10.64898/2026.05.17.725717</a>
-</div>
-<div id="ref-kc_flocking_2026" class="csl-entry" role="listitem">
-Kumar KC, Y., Nabeel, A., Iyer, S., &amp; Guttal, V. (2026). Flocking by stopping: A mechanism of emergent order in collective movement. <em>Physical Review E</em>, <em>113</em>(3), 034402. <a href="https://doi.org/10.1103/lnrz-wrf4">https://doi.org/10.1103/lnrz-wrf4</a>
-</div>
-<div id="ref-balagopal_hydrodynamics_2026" class="csl-entry" role="listitem">
-Nair, B., Nabeel, A., &amp; Raj, M. D. (2026). Hydrodynamic interactions mask the true heterogeneity of a microscopic collective. <em>arXiv</em>. <a href="https://doi.org/10.48550/arxiv.2604.23151">https://doi.org/10.48550/arxiv.2604.23151</a>
-</div>
-<div id="ref-nabeel_discovering_2025" class="csl-entry" role="listitem">
-Nabeel, A., Karichannavar, A., Palathingal, S., Jhawar, J., Brückner, D. B., Danny Raj, M., &amp; Guttal, V. (2025). Discovering stochastic dynamical equations from ecological time series data. <em>The American Naturalist</em>, 734083. <a href="https://doi.org/10.1086/734083">https://doi.org/10.1086/734083</a>
-</div>
-<div id="ref-nabeel_data-driven_2023" class="csl-entry" role="listitem">
-Nabeel, A., Jadhav, V., Danny Raj, M., Sire, C., Theraulaz, G., Escobedo, R., Iyer, S. K., &amp; Guttal, V. (2023). Data-driven discovery of stochastic dynamical equations of collective motion. <em>Physical Biology</em>, <em>20</em>(5), 056003. <a href="https://doi.org/10.1088/1478-3975/ace22d">https://doi.org/10.1088/1478-3975/ace22d</a>
-</div>
-<div id="ref-m_inferring_2022" class="csl-entry" role="listitem">
-Danny Raj, M., Sivakumar, P., &amp; Nabeel, A. (2022). Inferring the stability of concentrated emulsions from droplet configuration information. <em>The European Physical Journal Special Topics</em>, <em>232</em>(6), 893–900. <a href="https://doi.org/10.1140/epjs/s11734-022-00705-4">https://doi.org/10.1140/epjs/s11734-022-00705-4</a>
-</div>
-<div id="ref-nabeel_disentangling_2022" class="csl-entry" role="listitem">
-Nabeel, A., &amp; Danny Raj, M. (2022). Disentangling intrinsic motion from neighborhood effects in heterogeneous collective motion. <em>Chaos: An Interdisciplinary Journal of Nonlinear Science</em>, <em>32</em>(6), 063119. <a href="https://doi.org/10.1063/5.0093682">https://doi.org/10.1063/5.0093682</a>
-</div>
-<div id="ref-sundaresan_mapping_2017" class="csl-entry" role="listitem">
-Sundaresan, M., Nabeel, A., &amp; Sridharan, D. (2017). Mapping distinct timescales of functional interactions among brain networks. <em>31st Conference on Neural Information Processing Systems</em>, 10. <a href="https://pubmed.ncbi.nlm.nih.gov/31285649/">https://pubmed.ncbi.nlm.nih.gov/31285649/</a>
-</div>
-<div id="ref-misra_parameterized_2015" class="csl-entry" role="listitem">
-Misra, N., Nabeel, A., &amp; Singh, H. (2015). On the <span>Parameterized</span> <span>Complexity</span> of <span>Minimax</span> <span>Approval</span> <span>Voting</span>. <em>Proceedings of the 2015 International Conference on Autonomous Agents and Multiagent Systems</em>, 9. <a href="https://dl.acm.org/doi/10.5555/2772879.2772895">https://dl.acm.org/doi/10.5555/2772879.2772895</a>
-</div>
-</div></section></div></main> <!-- /main -->
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     // Ensure there is a toggle, if there isn't float one in the top right
