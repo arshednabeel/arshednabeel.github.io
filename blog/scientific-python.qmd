@@ -3,7 +3,6 @@ title: Python for scientific computation
 description: "This article provides setup guidelines for a minimal, no-nonsense Python installation for scientific computing."
 date: 2026-05-21
 reference-location: margin
-draft: false
 toc: true
 ---
 
