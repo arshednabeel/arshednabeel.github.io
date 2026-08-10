@@ -1,30 +1,14 @@
 ---
-title: Events
+title: Talks+
 toc: false
 ---
 
-# Conferences and Workshops
 
-**Alma Dal Co School on Collective Behaviour, 2025** \
-Istituto Veneto di Scienze, Lettere ed Arti (IVSLA), Venice, Italy. September-October 2025 \
-Poster: _Towards unifying principles of fish schooling dynamics_
+## Invited Talks and Lectures
 
-**Behaviour 2025 (38th International Ethological Congress)** \
-Kolkata, India. August 2025 \
-Poster: _Towards unifying principles of fish schooling dynamics_ (Best Poster Award)
-
-**Konstanz School of Collective Behaviour, 2025** \
-University of Konstanz, Konstanz, Germany. July-August 2025
-
-**Conference on Complex Systems, 2025** \
-University of Exeter, Exeter, United Kingdom. August-September 2024 \
-Talk: _Towards unifying principles of fish schooling dynamics_
-
-**Collective Behaviour Workshop** \
-Isaac Newton Institute of Mathematical Sciences, Cambridge, United Kingdom. August 2023 \
-Talk: _Discovering stochastic dynamical models from time series data_ ([video](https://youtu.be/ZnQ8_UukJcY))
-
-# Invited Talks and Lectures
+Talk: _The unreasonable effectiveness of simple models_ ([video](https://youtu.be/p4zymHC_kqo?si=Uh4l8x8tsDU-ky9N)) \
+**Fisher's Fishes Online Seminar Series** \
+August 2026
 
 Lecture: _Self organization and emergence in living systems_ \
 **Summer School on Physics of Living Systems** for high-school students \
@@ -41,4 +25,27 @@ Mar Baselios College of Engineering and Technology, Thiruvananthapuram, India. J
 Talk: _Networks of the brain: Exploring Brain Function Through Data and Computation_ ([video](https://youtu.be/CzuntCROPhA)) \
 **IISc CSA Summer School** for undergraduate students \
 Department of Computer Science and Automation, Indian Institute of Science, Bengaluru, India. July 2016
+
+## Contributed Talks
+
+**Conference on Complex Systems, 2025** \
+University of Exeter, Exeter, United Kingdom. August-September 2024 \
+Talk: _Towards unifying principles of fish schooling dynamics_
+
+**Collective Behaviour Workshop** \
+Isaac Newton Institute of Mathematical Sciences, Cambridge, United Kingdom. August 2023 \
+Talk: _Discovering stochastic dynamical models from time series data_ ([video](https://youtu.be/ZnQ8_UukJcY))
+
+## Other Conferences and Workshops
+
+**Alma Dal Co School on Collective Behaviour, 2025** \
+Istituto Veneto di Scienze, Lettere ed Arti (IVSLA), Venice, Italy. September-October 2025 \
+Poster: _Towards unifying principles of fish schooling dynamics_
+
+**Behaviour 2025 (38th International Ethological Congress)** \
+Kolkata, India. August 2025 \
+Poster: _Towards unifying principles of fish schooling dynamics_ (🏆 Best Poster Award)
+
+**Konstanz School of Collective Behaviour, 2025** \
+University of Konstanz, Konstanz, Germany. July-August 2025
 

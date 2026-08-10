@@ -12,13 +12,15 @@ My research interests sit at the intersection of biology, computer science and a
 
 **Data driven modelling.** In my research, I develop and use techniques to _discover_ models from empirical data. I am a strong proponent of combining of data- and theory-driven modelling approaches to answer questions about complex natural systems.
 
+A core philosophy is an emphasis on **data driven, top down models**. In collective behaviour, this means that I let (a small number of) coarse-grained variables tell me what the essential dynamical patterns are, and build minimal models that are consistent with these patterns.
+
 # Projects
 
 ## Collective movement of fish schools
 
 For my Ph. D. research, I study the collective movement of fish schools, using a combination of data-driven and theoretical approaches. The [Theoretical Ecology and Evolution (TEE) Lab](https://teelabiisc.wordpress.com) at IISc, with its remarkable mix of experimentalists and theorists, makes this research possible.
 
-**Unifying principles of collective movement in fish schools.** I analyzed the movement trajectories of over a dozen different species of fish to understand generalisable patterns and principles underlying their collective movement. Insights from this analysis lead to new models of collective movement in fish, where variable speed plays a crucial role in the emergent dynamics [@kc_flocking_2026].
+**Unifying principles of collective movement in fish schools.** In this large and ambitious project, I analysed the movement patterns of over a dozen fish species and identified broad dynamical features that characterise their group-level dynamics. Then, I identified minimal models for their individual-level movement and interactions that match the emergent group dynamics in real fish schools. Together, my research proposes a unifying framework for understanding the collective behaviour in fish schools, bridging microscopic (individual-level) and mesoscopic (group-level) phenomena and connecting data and theory. Insights from this analysis lead to new models of collective movement, where variable speed plays a crucial role in the emergent dynamics [@kc_flocking_2026].
 
 **Collective movement of mixed-species fish schools.** The movement models developed above gives rise to novel predictions about the schooling behaviour of mixed-species schools, where different species differ slightly in their behaviour. These predictions match remarkably well with actual experimental data from mixed-species schools. _(with [Jahanvi Tiwari](https://jahanvitiwari.weebly.com))_
 

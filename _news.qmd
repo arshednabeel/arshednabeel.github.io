@@ -2,10 +2,12 @@
 
 ::: {style="text-align: left"}
 
+**August 2026** | I gave a talk in the __Fisher's Fishes Online Seminar Series__ on our recent work on guppy population dynamics, and the general philosophy of top-down data-driven modelling. A recording of the talk is [here](https://youtu.be/p4zymHC_kqo?si=Uh4l8x8tsDU-ky9N).
+
+**July 2026** | Our work, lead by [Jahanvi](https://jahanvitiwari.weebly.com), on the collective movement of mixed species fish is out as a [preprint](https://www.biorxiv.org/content/10.64898/2026.07.10.737720v1)! 
+
 **May 2026** | Our work on the stochastic population dynamics of Trinidadian guppies is out as a [preprint](https://www.biorxiv.org/content/10.64898/2026.05.17.725717v1)!
 
-**Mar 2026** | Our new paper, _'Flocking by stopping: a mechanism for order in collective movement'_ is now out in [Physical Review E](https://doi.org/10.1103/lnrz-wrf4)! Here is a short [blog post about the paper](blog/flocking-by-stopping.qmd).
-
-**Feb 2026** | I have migrated my website to this github.io site, powered by [Quarto](https://quarto.org). My old Wordpress website was [here](https://arshednabeel.wordpress.com).
+**Mar 2026** | Our new paper _'Flocking by stopping: a mechanism for order in collective movement'_, led by Yogesh, is now out in [Physical Review E](https://doi.org/10.1103/lnrz-wrf4)! Here is a short [blog post about the paper](blog/flocking-by-stopping.qmd).
 
 :::
